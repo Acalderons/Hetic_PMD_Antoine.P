@@ -1,7 +1,7 @@
 /*
 Imports
 */
-
+    require("dotenv").config()
     const express = require("express");
     const path = require("path");
     const bodyParser = require("body-parser");
@@ -21,7 +21,7 @@ Démarrer le serveur
 */
 
     server.listen(port, () => {
-        console.log("Server is active on port ${port}");
+        console.log(`Server is active on port ${port}`);
     });
 
 //
